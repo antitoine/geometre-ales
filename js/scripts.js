@@ -6,14 +6,14 @@ $(document).ready(function() {
     $(window).scroll(function() {
       var scroll = $(window).scrollTop();
 
-      if (scroll >= 200) {
+      if (scroll >= 460) {
         $('header .navbar')
           .addClass('navbar-fixed-top')
           .addClass('navbar-light')
           .addClass('bg-faded')
           .removeClass('navbar-dark')
           .removeClass('bg-inverse');
-        $('section.content').css({
+        $('header .heading').css({
           "padding-top": "60px"
         });
       } else {
@@ -23,7 +23,7 @@ $(document).ready(function() {
           .addClass('bg-inverse')
           .removeClass('navbar-light')
           .removeClass('bg-faded');
-        $('section.content').css({
+        $('header .heading').css({
           "padding-top": "0"
         });
       }

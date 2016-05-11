@@ -1,9 +1,14 @@
 /* General
 -------------------------------------------------- */
 .tmp-content {
-  height: 1700px;
+  height: 100vh;
   width: 500px;
   background: #eee;
+  margin: 50px 0;
+}
+
+.title-pc {
+  font-family: "Lucida Grande",Verdana,Arial,sans-serif;
 }
 
 /* Header
@@ -13,6 +18,9 @@ header .oge-logo img {
 }
 header .navbar.navbar-dark .oge-logo img.black {
   display: none;
+}
+header .navbar.bg-inverse {
+  background-color: #272727;
 }
 header .navbar.navbar-light .oge-logo img.white {
   display: none;
@@ -25,8 +33,20 @@ header .navbar .navbar-toggler {
 }
 header .navbar .navbar-brand {
   margin-left: 15px;
-  font-family: "Lucida Grande",Verdana,Arial,sans-serif;
   font-size: 1.7em;
+}
+header .heading {
+  background: #272727 url("../img/topography.jpg") repeat scroll center center / cover;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .heading .content {
+  text-align: center;
+  background-color: rgba(255,255,255,0.7);
+  padding: 20px 0;
+  width: 100%;
 }
 
 
@@ -50,5 +70,5 @@ body {
   /* Set the fixed height of the footer here */
   height: 60px;
   line-height: 60px; /* Vertically center the text there */
-  background-color: #f5f5f5;
+  background-color: #272727;
 }

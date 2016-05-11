@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
   </head>
-  <body>
+  <body id="top">
 
     <header class="header">
       <nav class="navbar navbar-full navbar-dark bg-inverse animated">
@@ -25,52 +25,59 @@
             &#9776;
           </button>
           <div class="collapse navbar-toggleable-xs" id="mainMenu">
-            <a class="navbar-brand hidden-sm-down" href="/">
+            <a class="navbar-brand hidden-sm-down title-pc" href="#top">
               Patrick Chabert
             </a>
             <ul class="nav navbar-nav pull-sm-right">
               <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#presentation">Présentation</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#activities">Activités</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#references">Références</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
+      <div class="heading">
+        <div class="content">
+          <img src="img/logo.png">
+          <h1 class="title-pc">Patrick Chabert</h1>
+        </div>
+      </div>
     </header>
 
-    <section class="content">
+    <div class="content">
+
       <div class="container">
         <!--[if lt IE 8]>
         <p class="browserupgrade">Votre navigateur n'est pas à jour et l'affichage correct de ce site n'est pas garanti. Merci <a href="http://browsehappy.com/">de le mettre à jour</a> pour améliorer votre expérience.</p>
         <![endif]-->
-
-        <h1>Hello World !</h1>
-        <h1>Hello World !</h1>
-        <h1>Hello World !</h1>
-        <h1>Hello World !</h1>
-        <h1>Hello World !</h1>
-        <h1>Hello World !</h1>
-        <h1>Hello World !</h1>
-        <h1>Hello World !</h1>
-        <h1>Hello World !</h1>
-        <h1>Hello World !</h1>
-        <h1>Hello World !</h1>
-        <h1>Hello World !</h1>
-        <h1>Hello World !</h1>
-        <h1>Hello World !</h1>
-
-        <div class="tmp-content"></div>
       </div>
-    </section>
+
+      <section id="presentation" class="container">
+        <h3>Présentation</h3>
+        <div class="tmp-content"></div>
+      </section>
+      <section id="activities" class="container">
+        <h3>Activités</h3>
+        <div class="tmp-content"></div>
+      </section>
+      <section id="references" class="container">
+        <h3>Références</h3>
+        <div class="tmp-content"></div>
+      </section>
+      <section id="contact" class="container">
+        <h3>Contact</h3>
+        <div class="tmp-content"></div>
+      </section>
+    </div>
 
     <footer class="footer">
       <div class="container">
