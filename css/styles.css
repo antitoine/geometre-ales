@@ -36,11 +36,17 @@ header .navbar .navbar-brand {
   font-size: 1.7em;
 }
 header .heading {
-  background: #272727 url("../img/topography.jpg") repeat scroll center center / cover;
+  background: #272727 url('../img/topography.jpg') repeat scroll center center / cover;
   height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+/* Retina Screen */
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  header .heading {
+    background-image: url('../img/topography@2x.jpg');
+  }
 }
 header .heading .content {
   text-align: center;
