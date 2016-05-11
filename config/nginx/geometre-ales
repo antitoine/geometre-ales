@@ -1,0 +1,15 @@
+# geometre-ales.fr configuration
+#
+server {
+        listen 80 default_server;
+        listen [::]:80 default_server;
+
+        root /var/www/geometre-ales/app;
+
+        index index.html;
+
+        server_name .geometre-ales.fr .geometre-ales.lxc;
+
+        error_log /var/log/nginx/geometre-ales.error.log;
+        access_log /var/log/nginx/geometre-ales.access.log;
+}

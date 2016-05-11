@@ -1,0 +1,23 @@
+{
+  "name": "geometre-ales",
+  "version": "1.0.0",
+  "description": "Patrick Chabert Geometre Expert Ales Website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antitoine/geometre-ales.git"
+  },
+  "author": "Antoine Chabert",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/antitoine/geometre-ales/issues"
+  },
+  "homepage": "https://github.com/antitoine/geometre-ales#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.2",
+    "jquery": "^2.2.3"
+  }
+}
