@@ -3,20 +3,8 @@ $(document).ready(function() {
   /***************** Header BG Scroll ******************/
 
   $(function() {
-    $(window).scroll(function() {
-      var scroll = $(window).scrollTop();
-
-      if (scroll >= 460) {
-        $('header .navbar')
-          .addClass('navbar-fixed-top')
-          .addClass('navbar-light')
-          .addClass('bg-faded')
-          .removeClass('navbar-dark')
-          .removeClass('bg-inverse');
-        $('header .heading').css({
-          "padding-top": "60px"
-        });
-      } else {
+    $('body > .content').waypoint(function(direction) {
+      if (direction === 'up') {
         $('header .navbar')
           .removeClass('navbar-fixed-top')
           .addClass('navbar-dark')
@@ -26,9 +14,22 @@ $(document).ready(function() {
         $('header .heading').css({
           "padding-top": "0"
         });
+      } else if (direction === 'down') {
+        $('header .navbar')
+          .fadeOut(0)
+          .addClass('navbar-fixed-top')
+          .addClass('navbar-light')
+          .addClass('bg-faded')
+          .removeClass('navbar-dark')
+          .removeClass('bg-inverse')
+          .fadeIn(500);
+        $('header .heading').css({
+          "padding-top": "60px"
+        });
       }
     });
   });
+  
   /***************** Smooth Scrolling ******************/
 
   $(function() {
