@@ -5,7 +5,6 @@
   width: 500px;
   background: #eee;
   margin: 50px 0;
-  display: none;
 }
 
 .title-pc {
@@ -30,8 +29,14 @@ header > .wrapper {
 header .oge-logo img {
   height: 50px;
 }
+header .navbar {
+  border-bottom: 1px solid #E2001A;
+}
 header .navbar.navbar-dark .oge-logo img.black {
   display: none;
+}
+header .navbar.navbar-dark {
+  border-bottom-color: transparent;
 }
 header .navbar.bg-inverse {
   background-color: #272727;
@@ -55,6 +60,7 @@ header .heading {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: 1px solid #E2001A;
 }
 @media all and (min-width: 0) and (max-width: 640px) {
   header .heading {
