@@ -131,9 +131,15 @@ $(document).ready(function() {
 
   /***************** Initiate Flexslider ******************/
 
-  $('.flexslider').flexslider({
+  $('#presentation .presentation-flexslider').flexslider({
     animation: "slide",
-    controlsContainer: $(".flexslider-navigation .controls-container"),
-    customDirectionNav: $(".flexslider-navigation a")
+    controlsContainer: $("#presentation .flexslider-navigation .controls-container"),
+    customDirectionNav: $("#presentation .flexslider-navigation a")
+  });
+
+  $('#references .references-flexslider').flexslider({
+    animation: "slide",
+    controlsContainer: $("#references .flexslider-navigation .controls-container"),
+    customDirectionNav: $("#references .flexslider-navigation a")
   });
 });
