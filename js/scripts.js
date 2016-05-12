@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+  var fixedNavBarOffset = 60;
+
   /***************** Header BG Scroll ******************/
 
   $('body > .content').waypoint(function(direction) {
@@ -10,9 +12,6 @@ $(document).ready(function() {
         .addClass('bg-inverse')
         .removeClass('navbar-light')
         .removeClass('bg-faded');
-      $('header .heading').css({
-        "padding-top": "0"
-      });
     } else if (direction === 'down') {
       $('header .navbar')
         .fadeOut(0)
@@ -22,10 +21,9 @@ $(document).ready(function() {
         .removeClass('navbar-dark')
         .removeClass('bg-inverse')
         .fadeIn(500);
-      $('header .heading').css({
-        "padding-top": "60px"
-      });
     }
+  }, {
+    offset: 200
   });
 
   /***************** Smooth Scrolling ******************/
@@ -37,13 +35,59 @@ $(document).ready(function() {
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
         $('html,body').animate({
-          scrollTop: target.offset().top
+          scrollTop: target.offset().top - fixedNavBarOffset
         }, 1000);
         return false;
       }
     }
   });
 
+  /*************** Nav bar active item *****************/
+
+  var activeItemOffset = fixedNavBarOffset + 10;
+  $('#presentation').waypoint(function(direction) {
+    if (direction === 'down') {
+      $('header .navbar li.presentation').addClass('active');
+    } else if (direction === 'up') {
+      $('header .navbar li.presentation').removeClass('active');
+    }
+  }, {
+    offset: activeItemOffset
+  });
+  $('#activities').waypoint(function(direction) {
+    if (direction === 'down') {
+      $('header .navbar li.presentation').removeClass('active');
+      $('header .navbar li.activities').addClass('active');
+    } else if (direction === 'up') {
+      $('header .navbar li.activities').removeClass('active');
+      $('header .navbar li.presentation').addClass('active');
+    }
+  }, {
+    offset: activeItemOffset
+  });
+  $('#references').waypoint(function(direction) {
+    if (direction === 'down') {
+      $('header .navbar li.activities').removeClass('active');
+      $('header .navbar li.references').addClass('active');
+    } else if (direction === 'up') {
+      $('header .navbar li.references').removeClass('active');
+      $('header .navbar li.activities').addClass('active');
+    }
+  }, {
+    offset: activeItemOffset
+  });
+  $('#contact').waypoint(function(direction) {
+    if (direction === 'down') {
+      $('header .navbar li.references').removeClass('active');
+      $('header .navbar li.contact').addClass('active');
+    } else if (direction === 'up') {
+      $('header .navbar li.contact').removeClass('active');
+      $('header .navbar li.references').addClass('active');
+    }
+  }, {
+    offset: activeItemOffset
+  });
+  
   /********** Dynamic elements apparitions *************/
 
   $('.dynamic-presentation').waypoint(function() {
