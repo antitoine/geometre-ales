@@ -97,25 +97,29 @@ $(document).ready(function() {
   /********** Dynamic elements apparitions *************/
 
   $(function () {
-    $('.dynamic-presentation').waypoint(function() {
-      $('.dynamic-presentation').addClass('animated fadeInUp');
-    }, {
-      offset: '75%'
+    $('.dynamic-left').each(function() {
+      var elt = $(this);
+      elt.waypoint(function() {
+        elt.addClass('animated fadeInLeft');
+      }, {
+        offset: '75%'
+      });
     });
-    $('.dynamic-activities').waypoint(function() {
-      $('.dynamic-activities').addClass('animated fadeInRight');
-    }, {
-      offset: '75%'
+    $('.dynamic-right').each(function() {
+      var elt = $(this);
+      elt.waypoint(function() {
+        elt.addClass('animated fadeInRight');
+      }, {
+        offset: '75%'
+      });
     });
-    $('.dynamic-references').waypoint(function() {
-      $('.dynamic-references').addClass('animated fadeInLeft');
-    }, {
-      offset: '75%'
-    });
-    $('.dynamic-contact').waypoint(function() {
-      $('.dynamic-contact').addClass('animated fadeInDown');
-    }, {
-      offset: '75%'
+    $('.dynamic-bottom').each(function() {
+      var elt = $(this);
+      elt.waypoint(function() {
+        elt.addClass('animated fadeInUp');
+      }, {
+        offset: '75%'
+      });
     });
   });
 
@@ -123,5 +127,11 @@ $(document).ready(function() {
 
   $(function () {
     $('[data-toggle="tooltip"]').tooltip()
+  });
+
+  /***************** Initiate Flexslider ******************/
+
+  $('.flexslider').flexslider({
+    animation: "slide"
   });
 });

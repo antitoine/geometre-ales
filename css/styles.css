@@ -24,7 +24,7 @@
   font-weight: bold;
 }
 
-.dynamic-presentation, .dynamic-activities, .dynamic-references, .dynamic-contact {
+.dynamic-left, .dynamic-right, .dynamic-bottom {
   visibility: hidden;
 }
 .bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight, .bounceInDown {
@@ -33,6 +33,11 @@
 
 .red {
   color: #E2001A;
+}
+
+.img-thumbnail {
+  box-shadow:0 1px 4px rgba(0,0,0,.3);
+  border-radius: 0;
 }
 
 /* Header
@@ -180,9 +185,29 @@ footer.footer {
 
 /* Content
 -------------------------------------------------- */
+
+/* Upgrade Browser Message */
 html .browserupgrade {
   display: none;
 }
 html.lt-ie9 .browserupgrade {
   display: block;
+}
+
+/* Presentation Section */
+#presentation .slides .thumbnail {
+  width: auto;
+  height: auto;
+  background: #fff;
+  padding: .25rem;
+  line-height: 1.5;
+  border: 1px solid #ddd;
+}
+#presentation .slides .thumbnail > div {
+  width: 100%;
+  height: 350px;
+  background: no-repeat center center / cover;
+}
+.flex-direction-nav a {
+  height: 50px;
 }

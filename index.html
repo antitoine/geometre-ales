@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="node_modules/animate.css/animate.css">
     <link rel="stylesheet" href="node_modules/tether/dist/css/tether.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/flexslider/flexslider.css">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body id="top">
@@ -29,7 +30,7 @@
               &#9776;
             </button>
             <div class="collapse navbar-toggleable-xs" id="mainMenu">
-              <a class="navbar-brand hidden-sm-down title-pc" href="#top">
+              <a class="navbar-brand hidden-md-down title-pc" href="#top">
                 Patrick Chabert
               </a>
               <ul class="nav navbar-nav pull-sm-right">
@@ -67,20 +68,74 @@
       </div>
 
       <section id="presentation" class="container">
-        <h3>Présentation</h3>
-        <div class="tmp-content dynamic-presentation"></div>
+        <h2>Présentation</h2>
+        <hr>
+        <section class="row text-justify">
+          <div class="col-md-5">
+            <img src="img/presentation/historique.jpg" class="img-thumbnail dynamic-left">
+          </div>
+          <div class="col-md-7">
+            <h3>Historique</h3>
+            <p>Lors de la création de l’Ordre des Géomètres Experts en 1946, Monsieur Robert BRUNEL s’inscrit comme Géomètre Expert, au 6 rue Beauteville à Alès.</p>
+            <p>En 1983 , il décide de se consacrer plus particulièrement à l’aspect foncier de son activité et se sépare de la partie bureau d’études (actuellement entreprise Gaxieu).</p>
+            <p>C’est en 1989, pour cause de départ à la retraite, que Monsieur Robert Brunel vend son cabinet. Monsieur Patrick CHABERT prend alors sa succession.</p>
+            <p>Afin d’avoir des locaux plus spacieux et plus accessibles, le cabinet est transféré en 1992 à son adresse actuelle.</p>
+          </div>
+        </section>
+        <hr>
+        <section class="row text-justify">
+          <div class="col-md-7">
+            <h3>Personnel</h3>
+            <p>Actuellement, l’entreprise  est composée:</p>
+            <ul>
+              <li>D’une secrétaire (accueil, renseignements téléphoniques, courrier, conception et suivi administratif des dossiers, archivage ….).</li>
+              <li>D’une  collaboratrice (administration et gestion du personnel)</li>
+              <li>De trois techniciens, niveau BTS qui prennent  en charge  toute la partie technique des dossiers, du relevé terrestre jusqu’à l’établissement des documents (plans, DA, DPMC, déclarations préalables, procès verbaux …).  De plus, ils sont spécialisés en Dessin Assisté par Ordinateur (DAO).</li>
+              <li>De deux apprentis en formation en alternance au CFA Dhuoda de Nîmes, en vue de l’obtention du BTS Géomètre Topographe.</li>
+            </ul>
+            <p>L’accueil régulier d’apprentis et de stagiaires est une des priorités de l’entreprise, afin de transmettre le savoir faire mais aussi pour que l’entreprise puisse rester innovante.</p>
+            <p>De même, des formations régulières sont proposées à tous les collaborateurs afin de favoriser leur développement et de répondre toujours mieux à l’attente des clients.</p>
+            <p>Tous les travaux sont réalisés par une équipe d’au moins deux personnes sur le terrain. C’est un choix d’entreprise que permet la polyvalence des fonctions. Cette méthodologie permet ainsi de transmettre plus facilement le savoir faire mais aussi de s’adapter plus rapidement à des situations différentes</p>
+          </div>
+          <div class="col-md-5">
+            <div class="flexslider">
+              <ul class="slides">
+                <li><div class="thumbnail"><div style="background-image:url('img/presentation/photo-personnel-site.jpg')"></div></div></li>
+                <li><div class="thumbnail"><div style="background-image:url('img/presentation/PB050134.jpg')"></div></div></li>
+                <li><div class="thumbnail"><div style="background-image:url('img/presentation/PB050131.jpg')"></div></div></li>
+                <li><div class="thumbnail"><div style="background-image:url('img/presentation/PB050133.jpg')"></div></div></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <hr>
+        <section class="row text-justify">
+          <div class="col-sm-5">
+          </div>
+          <div class="col-sm-7">
+            <h3>Matériel</h3>
+          </div>
+        </section>
+        <hr>
+        <section class="row text-justify">
+          <div class="col-sm-5">
+          </div>
+          <div class="col-sm-7">
+            <h3>Démarches</h3>
+          </div>
+        </section>
       </section>
       <section id="activities" class="container">
-        <h3>Activités</h3>
-        <div class="tmp-content dynamic-activities"></div>
+        <h2>Activités</h2>
+        <div class="tmp-content dynamic-right"></div>
       </section>
       <section id="references" class="container">
-        <h3>Références</h3>
-        <div class="tmp-content dynamic-references"></div>
+        <h2>Références</h2>
+        <div class="tmp-content dynamic-left"></div>
       </section>
       <section id="contact" class="container">
-        <h3>Contact</h3>
-        <div class="tmp-content dynamic-contact"></div>
+        <h2>Contact</h2>
+        <div class="tmp-content dynamic-bottom"></div>
       </section>
     </div>
 
@@ -138,6 +193,7 @@
     <script src="node_modules/waypoints/lib/jquery.waypoints.js"></script>
     <script src="node_modules/tether/dist/js/tether.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="node_modules/flexslider/jquery.flexslider.js"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>

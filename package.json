@@ -19,6 +19,7 @@
   "dependencies": {
     "animate.css": "^3.5.1",
     "bootstrap": "^4.0.0-alpha.2",
+    "flexslider": "^2.6.0",
     "jquery": "^2.2.3",
     "tether": "^1.3.2",
     "waypoints": "^4.0.0"
