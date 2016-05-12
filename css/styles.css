@@ -155,11 +155,12 @@ header .down-arrow a:focus {
 
 /* Footer
 -------------------------------------------------- */
-footer {
+footer .wrapper {
   background-color: #272727;
   padding: 20px 15px 5px 15px;
   color: #fff;
   border-top: 1px solid #E2001A;
+  min-height: 100%;
 }
 footer .title-pc {
   margin-top: 15px;
@@ -214,7 +215,7 @@ footer.footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  min-height: 220px;
+  height: 220px;
 }
 
 /* Content
