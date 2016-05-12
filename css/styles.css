@@ -208,6 +208,38 @@ html.lt-ie9 .browserupgrade {
   height: 350px;
   background: no-repeat center center / cover;
 }
-.flex-direction-nav a {
-  height: 50px;
+#presentation .flexslider {
+  margin-bottom: 0;
+}
+#presentation .flexslider-navigation {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+#presentation .flexslider-navigation > * {
+  display: table-cell;
+}
+#presentation .flexslider-navigation > a {
+  width: 50px;
+  padding: 0 10px;
+  font-size: 1.3em;
+  color: #272727;
+}
+#presentation .flexslider-navigation > a:hover,
+#presentation .flexslider-navigation > a:focus {
+  color: #E2001A;
+}
+#presentation .flex-control-paging li a {
+  background: transparent;
+  border: 1px solid rgba(39, 39, 39, .5);
+}
+#presentation .flex-control-paging li a.flex-active {
+  background: #E2001A;
+}
+#presentation .flexslider-navigation .flex-control-nav {
+  position: relative;
+  bottom: auto;
+}
+#presentation .flexslider-navigation .flex-control-nav li {
+  line-height: 8px;
 }

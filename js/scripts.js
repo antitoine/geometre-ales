@@ -132,6 +132,8 @@ $(document).ready(function() {
   /***************** Initiate Flexslider ******************/
 
   $('.flexslider').flexslider({
-    animation: "slide"
+    animation: "slide",
+    controlsContainer: $(".flexslider-navigation .controls-container"),
+    customDirectionNav: $(".flexslider-navigation a")
   });
 });
