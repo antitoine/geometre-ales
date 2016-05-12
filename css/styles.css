@@ -60,6 +60,9 @@ header .navbar.navbar-dark .oge-logo img.black {
 header .navbar.navbar-dark {
   border-bottom-color: transparent;
 }
+header .navbar.navbar-dark .title-pc span.red {
+  color: #fff;
+}
 header .navbar.bg-inverse {
   background-color: #272727;
 }
@@ -133,6 +136,7 @@ footer {
   background-color: #272727;
   padding: 20px 15px 5px 15px;
   color: #fff;
+  border-top: 1px solid #E2001A;
 }
 footer .title-pc {
   margin-top: 15px;
