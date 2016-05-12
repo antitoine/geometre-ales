@@ -1,3 +1,14 @@
+/* Fonts
+-------------------------------------------------- */
+@font-face {
+  font-family: 'Raleway';
+  src: url('../font/Raleway/raleway_thin-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../font/Raleway/raleway_thin-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../font/Raleway/raleway_thin-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+  url('../font/Raleway/raleway_thin-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+  url('../font/Raleway/raleway_thin-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
 /* General
 -------------------------------------------------- */
 .tmp-content {
@@ -8,7 +19,9 @@
 }
 
 .title-pc {
-  font-family: "Lucida Grande",Verdana,Arial,sans-serif;
+  font-family: 'Raleway', 'Lucida Grande',Verdana,Arial,sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .dynamic-presentation, .dynamic-activities, .dynamic-references, .dynamic-contact {
@@ -16,6 +29,10 @@
 }
 .bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight, .bounceInDown {
   visibility: visible;
+}
+
+.red {
+  color: #E2001A;
 }
 
 /* Header
