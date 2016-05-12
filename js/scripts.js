@@ -110,4 +110,10 @@ $(document).ready(function() {
   }, {
     offset: '75%'
   });
+
+  /******************** Tooltips ***********************/
+
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
 });

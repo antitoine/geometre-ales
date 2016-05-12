@@ -5,6 +5,7 @@
   width: 500px;
   background: #eee;
   margin: 50px 0;
+  display: none;
 }
 
 .title-pc {
@@ -93,13 +94,51 @@ header .heading .content {
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link.active:focus,
 .navbar-light .navbar-nav .nav-link.active:hover {
-  border-bottom-color: #E92633;
+  border-bottom-color: #E2001A;
 }
 .navbar-nav .nav-link {
   border-bottom: 1px solid;
 }
 /* Footer
 -------------------------------------------------- */
+footer {
+  color: #fff;
+}
+footer .footer-top {
+  background-color: #272727;
+  padding: 20px 15px 5px 15px;
+  min-height: 180px;
+}
+footer .footer-bottom {
+  background-color: #E2001A;
+  min-height: 40px;
+}
+footer .title-pc {
+  margin-top: 15px;
+  color: #fff;
+  font-size: 1.7em;
+}
+footer .nav a {
+  color: rgba(255, 255, 255, .75);
+}
+footer .nav a:hover,
+footer .nav a:focus {
+  color: #fff;
+}
+footer .separator-left {
+  border-left: 1px solid #fff;
+  padding-left: 30px;
+  min-height: 142px;
+}
+@media all and (max-width: 544px) {
+  footer .separator-left {
+    border-left: none;
+    margin-top: 20px;
+  }
+  footer .lead {
+    margin-bottom: 5px;
+  }
+}
 
 /* Sticky footer styles */
 html {
@@ -107,17 +146,13 @@ html {
   min-height: 100%;
 }
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+  margin-bottom: 220px;
 }
-.footer {
+footer.footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  line-height: 60px; /* Vertically center the text there */
-  background-color: #272727;
+  height: 220px;
 }
 
 /* Content
