@@ -41,6 +41,10 @@
   border-radius: 0;
 }
 
+.bg-inverse {
+  background-color: #272727;
+}
+
 /* Header
 -------------------------------------------------- */
 header {
