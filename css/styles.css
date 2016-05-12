@@ -44,6 +44,7 @@
 -------------------------------------------------- */
 header {
   margin-bottom: 20px;
+  position: relative;
 }
 header > .wrapper {
   min-height: 60px;
@@ -130,6 +131,21 @@ header .heading .content {
 .navbar-nav .nav-link {
   border-bottom: 1px solid;
 }
+
+header .down-arrow {
+  font-size: 30px;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+}
+header .down-arrow a {
+  color: rgba(255, 255, 255, .7);
+}
+header .down-arrow a:hover,
+header .down-arrow a:focus {
+  color: #fff;
+}
+
 /* Footer
 -------------------------------------------------- */
 footer {
