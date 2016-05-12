@@ -130,16 +130,9 @@ header .heading .content {
 /* Footer
 -------------------------------------------------- */
 footer {
-  color: #fff;
-}
-footer .footer-top {
   background-color: #272727;
   padding: 20px 15px 5px 15px;
-  min-height: 180px;
-}
-footer .footer-bottom {
-  background-color: #E2001A;
-  min-height: 40px;
+  color: #fff;
 }
 footer .title-pc {
   margin-top: 15px;
@@ -166,6 +159,17 @@ footer .separator-left {
   footer .lead {
     margin-bottom: 5px;
   }
+}
+footer .legals {
+  color: rgba(255, 255, 255, .75);
+  margin-top: 20px;
+}
+footer .legals a {
+  color: rgba(255, 255, 255, .75);
+}
+footer .legals a:hover,
+footer .legals a:focus {
+  color: #fff;
 }
 
 /* Sticky footer styles */
