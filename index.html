@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="fr">
+<!--[if lt IE 7]>      <html lang="fr" class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="fr" class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="fr" class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="fr"> <!--<![endif]-->
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -57,10 +60,10 @@
 
     <div class="content">
 
-      <div class="container">
-        <!--[if lt IE 8]>
-        <p class="browserupgrade">Votre navigateur n'est pas à jour et l'affichage correct de ce site n'est pas garanti. Merci <a href="http://browsehappy.com/">de le mettre à jour</a> pour améliorer votre expérience.</p>
-        <![endif]-->
+      <div class="container browserupgrade">
+        <div class="alert alert-danger" role="alert">
+          <p>Votre navigateur n'est pas à jour et l'affichage correct de ce site n'est pas garanti. Merci <a href="http://browsehappy.com/">de le mettre à jour</a> pour améliorer votre expérience.</p>
+        </div>
       </div>
 
       <section id="presentation" class="container">

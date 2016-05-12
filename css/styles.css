@@ -20,6 +20,9 @@
 
 /* Header
 -------------------------------------------------- */
+header {
+  margin-bottom: 20px;
+}
 header > .wrapper {
   min-height: 60px;
 }
@@ -98,8 +101,7 @@ header .heading .content {
 /* Footer
 -------------------------------------------------- */
 
-/* Sticky footer styles
--------------------------------------------------- */
+/* Sticky footer styles */
 html {
   position: relative;
   min-height: 100%;
@@ -116,4 +118,13 @@ body {
   height: 60px;
   line-height: 60px; /* Vertically center the text there */
   background-color: #272727;
+}
+
+/* Content
+-------------------------------------------------- */
+html .browserupgrade {
+  display: none;
+}
+html.lt-ie9 .browserupgrade {
+  display: block;
 }
