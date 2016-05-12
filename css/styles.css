@@ -36,7 +36,7 @@ header .navbar.navbar-light .oge-logo img.white {
   display: none;
 }
 header .navbar .navbar-nav {
-  line-height: 36px;
+  line-height: 35px;
 }
 header .navbar .navbar-toggler {
   line-height: 32px;
@@ -78,8 +78,23 @@ header .heading .content {
   padding: 20px 0;
   width: 100%;
 }
-
-
+.navbar-light .navbar-nav .open > .nav-link,
+.navbar-light .navbar-nav .open > .nav-link:focus,
+.navbar-light .navbar-nav .open > .nav-link:hover,
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .active > .nav-link:focus,
+.navbar-light .navbar-nav .active > .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.open,
+.navbar-light .navbar-nav .nav-link.open:focus,
+.navbar-light .navbar-nav .nav-link.open:hover,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.active:focus,
+.navbar-light .navbar-nav .nav-link.active:hover {
+  border-bottom-color: #E92633;
+}
+.navbar-nav .nav-link {
+  border-bottom: 1px solid;
+}
 /* Footer
 -------------------------------------------------- */
 
