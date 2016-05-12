@@ -129,33 +129,54 @@ $(document).ready(function() {
     $('[data-toggle="tooltip"]').tooltip()
   });
 
-  /***************** Initiate Flexslider ******************/
+  /**************** Initiate Flexslider ****************/
 
-  $('#presentation .presentation-flexslider').flexslider({
-    animation: "slide",
-    controlsContainer: $("#presentation .flexslider-navigation .controls-container"),
-    customDirectionNav: $("#presentation .flexslider-navigation a")
+  $(function () {
+    $('#presentation .presentation-flexslider').flexslider({
+      animation: "slide",
+      controlsContainer: $("#presentation .flexslider-navigation .controls-container"),
+      customDirectionNav: $("#presentation .flexslider-navigation a")
+    });
+
+    $('#references .references-flexslider').flexslider({
+      animation: "slide",
+      controlsContainer: $("#references .flexslider-navigation .controls-container"),
+      customDirectionNav: $("#references .flexslider-navigation a")
+    });
   });
 
-  $('#references .references-flexslider').flexslider({
-    animation: "slide",
-    controlsContainer: $("#references .flexslider-navigation .controls-container"),
-    customDirectionNav: $("#references .flexslider-navigation a")
-  });
+  /************* Google Maps Load & utils **************/
 
+  $(function () {
+    var mapDisplayed = false;
+    $('.google-maps-container').waypoint(function(direction) {
+      if (!mapDisplayed && direction === 'down') {
+        mapDisplayed = true;
+        $('.google-maps-container .google-maps').html('<iframe style="pointer-events: none;" marginheight="0" marginwidth="0" frameborder="0" height="300" width="600" src="http://maps.google.fr/maps?f=q&amp;source=s_q&amp;hl=fr&amp;geocode=&amp;q=Chabert+Patrick+G%C3%A9om%C3%A8tre&amp;aq=&amp;sll=46.75984,1.738281&amp;sspn=14.908361,33.815918&amp;vpsrc=6&amp;ie=UTF8&amp;hq=Chabert+Patrick+G%C3%A9om%C3%A8tre&amp;hnear=&amp;t=m&amp;cid=15468287871627251360&amp;ll=44.108758,4.081335&amp;spn=0.012326,0.0318&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>');
+        $('.google-maps-container .loader-container').delay(3000).fadeOut(1000);
 
-
-
-
-  var mapDisplayed = false;
-  $('.google-maps-container').waypoint(function(direction) {
-    if (!mapDisplayed && direction === 'down') {
-      mapDisplayed = true;
-      $('.google-maps-container .google-maps').html('<iframe scrolling="no" marginheight="0" marginwidth="0" frameborder="0" height="300" width="600" src="http://maps.google.fr/maps?f=q&amp;source=s_q&amp;hl=fr&amp;geocode=&amp;q=Chabert+Patrick+G%C3%A9om%C3%A8tre&amp;aq=&amp;sll=46.75984,1.738281&amp;sspn=14.908361,33.815918&amp;vpsrc=6&amp;ie=UTF8&amp;hq=Chabert+Patrick+G%C3%A9om%C3%A8tre&amp;hnear=&amp;t=m&amp;cid=15468287871627251360&amp;ll=44.108758,4.081335&amp;spn=0.012326,0.0318&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>');
-      $('.google-maps-container .loader-container').delay(3000).fadeOut(1000);
-    }
-  }, {
-    offset: '75%'
+        // Disable scroll zooming and bind back the click event
+        var onMapMouseleaveHandler = function (event) {
+          var that = $(this);
+          that.on('click', onMapClickHandler);
+          that.off('mouseleave', onMapMouseleaveHandler);
+          that.find('iframe').css("pointer-events", "none");
+        };
+        var onMapClickHandler = function (event) {
+          var that = $(this);
+          // Disable the click handler until the user leaves the map area
+          that.off('click', onMapClickHandler);
+          // Enable scrolling zoom
+          that.find('iframe').css("pointer-events", "auto");
+          // Handle the mouse leave event
+          that.on('mouseleave', onMapMouseleaveHandler);
+        };
+        // Enable map zooming with mouse scroll when the user clicks the map
+        $('.google-maps-container .google-maps').on('click', onMapClickHandler);
+      }
+    }, {
+      offset: '75%'
+    });
   });
 
 });
