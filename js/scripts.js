@@ -153,7 +153,7 @@ $(document).ready(function() {
       if (!mapDisplayed && direction === 'down') {
         mapDisplayed = true;
         $('.google-maps-container .google-maps').html('<iframe style="pointer-events: none;" marginheight="0" marginwidth="0" frameborder="0" height="300" width="600" src="http://maps.google.fr/maps?f=q&amp;source=s_q&amp;hl=fr&amp;geocode=&amp;q=Chabert+Patrick+G%C3%A9om%C3%A8tre&amp;aq=&amp;sll=46.75984,1.738281&amp;sspn=14.908361,33.815918&amp;vpsrc=6&amp;ie=UTF8&amp;hq=Chabert+Patrick+G%C3%A9om%C3%A8tre&amp;hnear=&amp;t=m&amp;cid=15468287871627251360&amp;ll=44.108758,4.081335&amp;spn=0.012326,0.0318&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>');
-        $('.google-maps-container .loader-container').delay(3000).fadeOut(1000);
+        $('.google-maps-container .loader-container').delay(4000).fadeOut(1000);
 
         // Disable scroll zooming and bind back the click event
         var onMapMouseleaveHandler = function (event) {

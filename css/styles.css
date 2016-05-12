@@ -326,9 +326,14 @@ html.lt-ie9 .browserupgrade {
 }
 
 /* Contact part */
+#contact {
+  margin-top: 20px;
+}
 #contact .google-maps-container {
   position: relative;
   height: 300px;
+  margin-top: 20px;
+  border-top: 1px solid #E2001A;
 }
 #contact .loader-container {
   position: absolute;
@@ -336,7 +341,7 @@ html.lt-ie9 .browserupgrade {
   left: 0;
   width: 100%;
   height: 300px;
-  background: rgba(255,255,255,0.3);
+  background: rgba(255,255,255,0.9);
 }
 #contact .google-maps {
   position: relative;
