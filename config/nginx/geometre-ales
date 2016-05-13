@@ -8,7 +8,7 @@ server {
 
         index index.html;
 
-        server_name .geometre-ales.fr .geometre-ales.lxc;
+        server_name .geometre-ales.fr .geometre-ales.lxc .geometre-ales.antoine-chabert.fr .geometre-ales.ancha.fr;
 
         error_log /var/log/nginx/geometre-ales.error.log;
         access_log /var/log/nginx/geometre-ales.access.log;
