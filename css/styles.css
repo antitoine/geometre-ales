@@ -230,10 +230,18 @@ html.lt-ie9 .browserupgrade {
 }
 
 /* Presentation Section */
+#presentation #carousel-presentation .carousel-control.right,
+#presentation #carousel-presentation .carousel-control.left {
+  background: none;
+}
 
 /* References part */
 #references {
   padding-top: 20px;
+}
+#references #carousel-references .carousel-control.right,
+#references #carousel-references .carousel-control.left {
+  background: none;
 }
 
 /* Contact part */
