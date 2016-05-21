@@ -31,7 +31,7 @@ $(document).ready(function() {
   /***************** Smooth Scrolling ******************/
 
   $(function () {
-    $('a[href*="#"]:not([href="#"], [href*="#carousel"])').click(function() {
+    $('a[href*="#"]:not([href="#"], [href*="#carousel-"], [href*="#tab-"])').click(function() {
       if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
 
         var target = $(this.hash);
