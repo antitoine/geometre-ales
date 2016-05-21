@@ -203,6 +203,11 @@ footer .legals a:focus {
   color: #fff;
 }
 
+/* Modal Legal Notices */
+#legal-notices address {
+  margin-left: 15px;
+}
+
 /* Sticky footer styles */
 html {
   position: relative;

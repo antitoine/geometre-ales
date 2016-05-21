@@ -352,7 +352,7 @@
                 </li>
                 <li>
                   <a data-toggle="tooltip" data-placement="left" title="Mail" href="mailto:chabert@geometre-ales.fr">
-                    <i class="fa fa-envelope" aria-hidden="true" style="color: rgb(55, 58, 60)"></i> chabert<i class="fa fa-at" aria-hidden="true"></i>geometre-ales.fr
+                    <i class="fa fa-envelope" aria-hidden="true" style="color: rgb(55, 58, 60)"></i> chabert@geometre-ales.fr
                   </a>
                 </li>
                 <li>
@@ -429,11 +429,66 @@
             </div>
           </div>
           <div class="row legals">
-            <p class="text-xs-center"><i class="fa fa-copyright" aria-hidden="true"></i>2016 Patrick Chabert Géomètre Expert - Tous droits réservés - <a href="#">Mentions légales</a></p>
+            <p class="text-xs-center"><i class="fa fa-copyright" aria-hidden="true"></i>2016 Patrick Chabert Géomètre Expert - Tous droits réservés - <a href="#" data-toggle="modal" data-target="#legal-notices">Mentions légales</a></p>
           </div>
         </div>
       </div>
     </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="legal-notices" tabindex="-1" role="dialog" aria-labelledby="legalNoticesLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="legalNoticesLabel">Mentions légales</h4>
+          </div>
+          <div class="modal-body">
+
+            <h5>Patrick CHABERT - Géomètre Expert</h5>
+            Le site est la propriété de M. Patrick CHABERT, géomètre expert à son compte.
+
+            <hr>
+            <h5>Contact</h5>
+            Pour nous contacter, veuillez nous adresser un email à <a href="mailto:chabert@geometre-ales.fr">chabert@geometre-ales.fr</a> ou nous envoyer un courriel postal : <br>
+            <address>
+              Patrick Chabert - Géomètre Expert<br>
+              104 chemin des Tilleuls<br>
+              30100 ALES
+            </address>
+
+            <hr>
+            <h5>Données personnelles</h5>
+            D'une façon générale, vous pouvez visiter notre site sur internet sans avoir à décliner votre identité et à fournir des informations personnelles vous concernant.
+            Cependant, nous pouvons parfois vous demander des informations. Par exemple, pour établir une correspondance ou soumettre une candidature, dans le but d'offrir un meilleur service.
+            Vous pouvez à tout moment nous demander de supprimer les données vous concernant.
+
+            <hr>
+            <h5>Copyright</h5>
+            Le site est protégé par le droit de la propriété intellectuelle. Par conséquent, toute reproduction partielle ou complète du site est interdite sans l’accord préalable de son auteur <a href="http://www.antoine-chabert.fr/">M. Antoine Chabert</a>.
+
+            <hr>
+            <h5>Hébergeur</h5>
+            So you Start<br>
+            OVH SAS au capital de 10 069 020 €<br>
+            RCS Roubaix – Tourcoing 424 761 419 00045<br>
+            Code APE 2620Z - N° TVA : FR 22 424 761 419<br>
+            Siège social : 2 rue Kellermann - 59100 Roubaix - France.<br>
+            <a href="http://www.ovh.com">www.ovh.com</a>
+
+            <hr>
+            <h5>Design et développement</h5>
+            Réalisation du site par <a href="http://www.antoine-chabert.fr/">Antoine Chabert</a>.
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
