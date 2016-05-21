@@ -31,7 +31,7 @@ $(document).ready(function() {
   /***************** Smooth Scrolling ******************/
 
   $(function () {
-    $('a[href*="#"]:not([href="#"])').click(function() {
+    $('a[href*="#"]:not([href="#"], [href*="#carousel"])').click(function() {
       if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
 
         var target = $(this.hash);
@@ -127,22 +127,6 @@ $(document).ready(function() {
 
   $(function () {
     $('[data-toggle="tooltip"]').tooltip()
-  });
-
-  /**************** Initiate Flexslider ****************/
-
-  $(function () {
-    $('#presentation .presentation-flexslider').flexslider({
-      animation: "slide",
-      controlsContainer: $("#presentation .flexslider-navigation .controls-container"),
-      customDirectionNav: $("#presentation .flexslider-navigation a")
-    });
-
-    $('#references .references-flexslider').flexslider({
-      animation: "slide",
-      controlsContainer: $("#references .flexslider-navigation .controls-container"),
-      customDirectionNav: $("#references .flexslider-navigation a")
-    });
   });
 
   /************* Google Maps Load & utils **************/

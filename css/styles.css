@@ -230,100 +230,10 @@ html.lt-ie9 .browserupgrade {
 }
 
 /* Presentation Section */
-#presentation .slides .thumbnail {
-  width: auto;
-  height: auto;
-  background: #fff;
-  padding: .25rem;
-  line-height: 1.5;
-  border: 1px solid #ddd;
-}
-#presentation .slides .thumbnail > div {
-  width: 100%;
-  height: 350px;
-  background: no-repeat center center / cover;
-}
-#presentation .presentation-flexslider {
-  margin-bottom: 0;
-}
-#presentation .flexslider-navigation {
-  display: table;
-  width: 100%;
-  table-layout: fixed;
-}
-#presentation .flexslider-navigation > * {
-  display: table-cell;
-}
-#presentation .flexslider-navigation > a {
-  width: 50px;
-  padding: 0 10px;
-  font-size: 1.3em;
-  color: #272727;
-}
-#presentation .flexslider-navigation > a:hover,
-#presentation .flexslider-navigation > a:focus {
-  color: #E2001A;
-}
-#presentation .flex-control-paging li a {
-  background: transparent;
-  border: 1px solid rgba(39, 39, 39, .5);
-}
-#presentation .flex-control-paging li a.flex-active {
-  background: #E2001A;
-}
-#presentation .flexslider-navigation .flex-control-nav {
-  position: relative;
-  bottom: auto;
-}
-#presentation .flexslider-navigation .flex-control-nav li {
-  line-height: 8px;
-}
 
 /* References part */
 #references {
   padding-top: 20px;
-}
-#references .references-flexslider {
-  margin-bottom: 0;
-  margin-top: 15px;
-  border-top: 1px solid #fff;
-  padding-top: 10px;
-}
-#references .flexslider-navigation {
-  display: table;
-  width: 100%;
-  table-layout: fixed;
-  border-top: 1px solid #fff;
-  padding-top: 10px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-#references .flexslider-navigation > * {
-  display: table-cell;
-}
-#references .flexslider-navigation > a {
-  width: 50px;
-  padding: 0 10px;
-  font-size: 2em;
-  color: #fff;
-}
-#references .flexslider-navigation > a:hover,
-#references .flexslider-navigation > a:focus {
-  color: #E2001A;
-}
-#references .flex-control-paging li a {
-  background: transparent;
-  border: 1px solid rgba(255, 255, 255, .7);
-}
-#references .flex-control-paging li a.flex-active {
-  background: #fff;
-}
-#references .flexslider-navigation .flex-control-nav {
-  position: relative;
-  bottom: auto;
-}
-#references .flexslider-navigation .flex-control-nav li {
-  line-height: 8px;
 }
 
 /* Contact part */
