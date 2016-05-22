@@ -45,7 +45,35 @@
   background-color: #272727;
 }
 
-
+.bg-separator {
+  border-style: solid;
+  border-width: 1px 0;
+  height: 200px;
+  background: #272727 no-repeat scroll center center / cover;
+}
+@media all and (min-width: 0) and (max-width: 640px) {
+  .bg-separator.ales {
+    /*background-image: url('../img/topography-small.jpg');*/
+    background-image: url('../img/ales.jpg');
+  }
+}
+@media all and (min-width: 640px) and (max-width: 1280px) {
+  .bg-separator.ales {
+    /*background-image: url('../img/topography-medium.jpg');*/
+    background-image: url('../img/ales.jpg');
+  }
+}
+@media all and (min-width: 1280px) and (max-width: 1920px) {
+  .bg-separator.ales {
+    /*background-image: url('../img/topography-large.jpg');*/
+    background-image: url('../img/ales.jpg');
+  }
+}
+@media all and (min-width: 1920px) {
+  .bg-separator.ales {
+    background-image: url('../img/ales.jpg');
+  }
+}
 
 /* Header
 -------------------------------------------------- */
