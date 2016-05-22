@@ -203,6 +203,11 @@ footer .legals a:focus {
   color: #fff;
 }
 
+/* Modals */
+.modal-body {
+  text-align: justify;
+}
+
 /* Modal Legal Notices */
 #legal-notices address {
   margin-left: 15px;

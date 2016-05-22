@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
   var fixedNavBarOffset = 60;
+  var marginNavBar = 20;
 
   /***************** Header BG Scroll ******************/
 
@@ -31,14 +32,14 @@ $(document).ready(function() {
   /***************** Smooth Scrolling ******************/
 
   $(function () {
-    $('a[href*="#"]:not([href="#"], [href*="#carousel-"], [href*="#tab-"])').click(function() {
+    $('a[href*="#"]:not([href="#"], [href*="#carousel-"], [href*="#tab-"], [href*="#modal-"])').click(function() {
       if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
 
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
         if (target.length) {
           $('html,body').animate({
-            scrollTop: target.offset().top - fixedNavBarOffset
+            scrollTop: target.offset().top - fixedNavBarOffset - marginNavBar
           }, 1000);
           return false;
         }
@@ -49,7 +50,7 @@ $(document).ready(function() {
   /*************** Nav bar active item *****************/
 
   $(function () {
-    var activeItemOffset = fixedNavBarOffset + 10;
+    var activeItemOffset = fixedNavBarOffset + 10 + marginNavBar;
     $('#presentation').waypoint(function(direction) {
       if (direction === 'down') {
         $('header .navbar li.presentation').addClass('active');
@@ -161,6 +162,18 @@ $(document).ready(function() {
     }, {
       offset: '75%'
     });
+  });
+
+  /******************* Lexicon link ********************/
+
+  $('a[href*="#modal-lexicon-"]').click(function () {
+    var href = $(this).attr('href');
+    $('#modal-lexicon').modal('toggle').on('shown.bs.modal', function (e) {
+      window.setTimeout(function() {
+        window.location = href;
+      }, 100);
+    });
+    return false;
   });
 
 });
