@@ -74,6 +74,46 @@
     background-image: url('../img/ales.jpg');
   }
 }
+.separator-right {
+  border-right: 1px solid rgba(0,0,0,.1);
+}
+.separator-left {
+  border-left: 1px solid rgba(0,0,0,.1);
+}
+.separator-top {
+  border-top: 1px solid rgba(0,0,0,.1);
+}
+.separator-bottom {
+  border-bottom: 1px solid rgba(0,0,0,.1);
+}
+@media (max-width: 544px) {
+  .separator-sm-up, .separator-md-up, .separator-lg-up, .separator-xl-up {
+    border: none;
+  }
+}
+@media (min-width: 544px) and (max-width: 768px) {
+  .separator-xs-down,
+  .separator-md-up, .separator-lg-up, .separator-xl-up {
+    border: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .separator-xs-down, .separator-sm-down,
+  .separator-lg-up, .separator-xl-up {
+    border: none;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .separator-xs-down, .separator-sm-down, .separator-md-down,
+  .separator-xl-up {
+    border: none;
+  }
+}
+@media (min-width: 1200px) {
+  .separator-xs-down, .separator-sm-down, .separator-md-down, .separator-lg-down {
+    border: none;
+  }
+}
 
 /* Header
 -------------------------------------------------- */
