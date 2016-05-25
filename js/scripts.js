@@ -114,10 +114,42 @@ $(document).ready(function() {
         offset: '75%'
       });
     });
-    $('.dynamic-bottom').each(function() {
+    $('.dynamic-up').each(function() {
       var elt = $(this);
       elt.waypoint(function() {
         elt.addClass('animated fadeInUp');
+      }, {
+        offset: '75%'
+      });
+    });
+    $('.dynamic-down').each(function() {
+      var elt = $(this);
+      elt.waypoint(function() {
+        elt.addClass('animated fadeInDown');
+      }, {
+        offset: '75%'
+      });
+    });
+    $('.dynamic-up').each(function() {
+      var elt = $(this);
+      elt.waypoint(function() {
+        elt.addClass('animated fadeInUp');
+      }, {
+        offset: '75%'
+      });
+    });
+    $('.dynamic-down').each(function() {
+      var elt = $(this);
+      elt.waypoint(function() {
+        elt.addClass('animated fadeInDown');
+      }, {
+        offset: '75%'
+      });
+    });
+    $('.dynamic-bounce').each(function() {
+      var elt = $(this);
+      elt.waypoint(function() {
+        elt.addClass('animated bounceIn');
       }, {
         offset: '75%'
       });

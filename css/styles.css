@@ -22,10 +22,10 @@
   text-transform: uppercase;
   font-weight: bold;
 }
-.dynamic-left, .dynamic-right, .dynamic-bottom {
+.dynamic-left, .dynamic-right, .dynamic-up, .dynamic-down, .dynamic-bounce {
   visibility: hidden;
 }
-.bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight, .bounceInDown {
+.bounceIn, .bounceInLeft, .bounceInRight, .fadeIn, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight, .bounceInDown {
   visibility: visible;
 }
 .red {
