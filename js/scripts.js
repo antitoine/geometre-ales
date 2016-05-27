@@ -208,4 +208,15 @@ $(document).ready(function() {
     return false;
   });
 
+  /****************** Background move ******************/
+
+  var screenHeight = $( window ).height();
+  $(window).on('resize', function(){
+    screenHeight = $( window ).height();
+  }).mousemove(function(e){
+    var y = ((((e.pageY * 100) / screenHeight) - 50) / 15) + 50;
+    $('.mouse-bg-move').each(function () {
+      $(this).css('background-position', '50% ' + y + '%');
+    });
+  });
 });
