@@ -198,25 +198,29 @@ $(document).ready(function() {
 
   /******************* Lexicon link ********************/
 
-  $('a[href*="#modal-lexicon-"]').click(function () {
-    var href = $(this).attr('href');
-    $('#modal-lexicon').modal('toggle').on('shown.bs.modal', function (e) {
-      window.setTimeout(function() {
-        window.location = href;
-      }, 100);
+  $(function () {
+    $('a[href*="#modal-lexicon-"]').click(function () {
+      var href = $(this).attr('href');
+      $('#modal-lexicon').modal('toggle').on('shown.bs.modal', function (e) {
+        window.setTimeout(function () {
+          window.location = href;
+        }, 100);
+      });
+      return false;
     });
-    return false;
   });
 
   /****************** Background move ******************/
 
-  var screenHeight = $( window ).height();
-  $(window).on('resize', function(){
-    screenHeight = $( window ).height();
-  }).mousemove(function(e){
-    var y = ((((e.pageY * 100) / screenHeight) - 50) / 15) + 50;
-    $('.mouse-bg-move').each(function () {
-      $(this).css('background-position', '50% ' + y + '%');
+  $(function () {
+    var screenHeight = $(window).height();
+    $(window).on('resize', function () {
+      screenHeight = $(window).height();
+    }).mousemove(function (e) {
+      var y = ((((e.pageY * 100) / screenHeight) - 50) / 15) + 50;
+      $('.mouse-bg-move').each(function () {
+        $(this).css('background-position', '50% ' + y + '%');
+      });
     });
   });
 });
