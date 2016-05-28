@@ -215,15 +215,19 @@
 
     $(function () {
       var screenHeight = $(window).height();
-      $(window).on('resize', function () {
-        screenHeight = $(window).height();
-      }).mousemove(function (e) {
-        var y = ((((e.pageY * 100) / screenHeight) - 50) / 15) + 50;
-        $('.mouse-bg-move').each(function () {
-          $(this).css('background-position', '50% ' + y + '%');
+      $(window).resize(function () {
+        screenHeight = $(this).height();
+      }).scroll(function() {
+        var screenPercentageMove = (($(this).scrollTop() * 100) / screenHeight);
+        $('.scroll-bg-effect').each(function() {
+          var elt = $(this);
+          var imageSizePercentage = ((elt.height() * 100) / screenHeight);
+          var y = (((imageSizePercentage / 100) * screenPercentageMove) / 2) + 50;
+          elt.css('background-position', '50% ' + y + '%');
         });
       });
     });
+
   });
 
 })(jQuery);
