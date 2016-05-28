@@ -9,13 +9,17 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <title>Patrick Chabert - Geomètre Expert à Alès (30)</title>
-    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="shortcut icon" href="img/util/favicon.ico" />
 
     <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
     <link rel="stylesheet" href="node_modules/tether/dist/css/tether.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
+
+    <!--[if lt IE 9]>
+    <script src="node_modules/html5shiv/dist/html5shiv.min.js"></script>
+    <![endif]-->
   </head>
   <body id="top">
 
@@ -24,8 +28,8 @@
         <nav class="navbar navbar-full navbar-dark bg-inverse animated">
           <div class="container">
             <a class="oge-logo pull-sm-left pull-xs-right" href="#top">
-              <img class="black" src="img/logo-dark.png">
-              <img class="white" src="img/logo-white.png">
+              <img class="black" src="img/logo/logo-dark.png">
+              <img class="white" src="img/logo/logo-white.png">
             </a>
             <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#mainMenu">
               &#9776;
@@ -54,7 +58,7 @@
       </div>
       <div class="heading mouse-bg-move">
         <div class="content">
-          <img src="img/logo.png">
+          <img src="img/logo/logo.png">
           <h1 class="title-pc"><span class="red">Patrick</span> Chabert</h1>
         </div>
       </div>
@@ -185,7 +189,12 @@
                 </ul>
               </div>
               <div class="col-sm-5 dynamic-bounce">
-                <img class="img-thumbnail hisrc" src="img/activities/boundary-small.jpg" data-1x="img/activities/boundary-medium.jpg" data-2x="img/activities/boundary-large.jpg">
+                <picture>
+                  <source srcset="img/activities/boundary.jpg" media="(min-width: 1920px)">
+                  <source srcset="img/activities/boundary-large.jpg" media="(min-width: 1280px)">
+                  <source srcset="img/activities/boundary-medium.jpg" media="(min-width: 640px)">
+                  <img class="img-thumbnail" srcset="img/activities/boundary-small.jpg" alt="Photo représentant un bornage avec en premier plan un appareil de mesure">
+                </picture>
               </div>
               <div class="col-sm-12">
                 <p>Le Géomètre-Expert est le seul professionnel habilité à réaliser les travaux qui fixent les limites des biens fonciers et à dresser les plans de bornage nécessaires pour les garantir.</p>
@@ -208,7 +217,11 @@
                 <p>De même, si vous devez partager un immeuble entre plusieurs acquéreurs, votre géomètre peut vous établir une division en volume afin de créer cette copropriété ou ce partage dans les meilleures conditions.</p>
               </div>
               <div class="col-sm-5 dynamic-bounce">
-                <img class="img-thumbnail hisrc" src="img/activities/paris-small.jpg" data-1x="img/activities/paris-medium.jpg" data-2x="img/activities/paris.jpg">
+                <picture>
+                  <source srcset="img/activities/paris.jpg" media="(min-width: 1280px)">
+                  <source srcset="img/activities/paris-medium.jpg" media="(min-width: 640px)">
+                  <img class="img-thumbnail" srcset="img/activities/paris-small.jpg" alt="Photo un bâtiment de la ville de Paris, France">
+                </picture>
               </div>
             </section>
           </div>
@@ -222,7 +235,12 @@
                 <p>Vous voulez procéder à un aménagement de terrain, une reprise ou création de réseau ou de voirie, votre géomètre peut vous y aider.</p>
               </div>
               <div class="col-md-4 dynamic-bounce">
-                <img class="img-thumbnail hisrc" src="img/activities/topography-airport-small.jpg" data-1x="img/activities/topography-airport-medium.jpg" data-2x="img/activities/topography-airport-large.jpg">
+                <picture>
+                  <source srcset="img/activities/topography-airport.jpg" media="(min-width: 1920px)">
+                  <source srcset="img/activities/topography-airport-large.jpg" media="(min-width: 1280px)">
+                  <source srcset="img/activities/topography-airport-medium.jpg" media="(min-width: 640px)">
+                  <img class="img-thumbnail" srcset="img/activities/topography-airport-small.jpg" alt="Photo d'un appareil de mesure avec un avion en arrière plan">
+                </picture>
               </div>
             </section>
           </div>
@@ -237,7 +255,12 @@
                 <p>De plus, il vous garantit du bon achèvement des travaux.</p>
               </div>
               <div class="col-sm-5 dynamic-bounce">
-                <img class="img-thumbnail hisrc" src="img/activities/surveyor-small.jpg" data-1x="img/activities/surveyor-medium.jpg" data-2x="img/activities/surveyor-large.jpg">
+                <picture>
+                  <source srcset="img/activities/surveyor.jpg" media="(min-width: 1920px)">
+                  <source srcset="img/activities/surveyor-large.jpg" media="(min-width: 1280px)">
+                  <source srcset="img/activities/surveyor-medium.jpg" media="(min-width: 640px)">
+                  <img class="img-thumbnail" srcset="img/activities/surveyor-small.jpg" alt="Photo d'un homme utilisant un appareil de mesure sur un chantier">
+                </picture>
               </div>
             </section>
           </div>
@@ -256,7 +279,12 @@
                 </ul>
               </div>
               <div class="col-sm-5 dynamic-bounce">
-                <img class="img-thumbnail hisrc" src="img/activities/supreme-court-small.jpg" data-1x="img/activities/supreme-court-medium.jpg" data-2x="img/activities/supreme-court-large.jpg">
+                <picture>
+                  <source srcset="img/activities/supreme-court.jpg" media="(min-width: 1920px)">
+                  <source srcset="img/activities/supreme-court-large.jpg" media="(min-width: 1280px)">
+                  <source srcset="img/activities/supreme-court-medium.jpg" media="(min-width: 640px)">
+                  <img class="img-thumbnail" srcset="img/activities/supreme-court-small.jpg" alt="Photo d'un palais de justice, une cour suprême">
+                </picture>
               </div>
             </section>
           </div>
@@ -336,7 +364,7 @@
         <div class="google-maps-container">
           <div class="google-maps"></div>
           <div class="loader-container">
-            <p><img src="img/ajax-loader.gif"> <span>Chargement de la carte</span></p>
+            <p><img src="img/util/ajax-loader.gif"> <span>Chargement de la carte</span></p>
           </div>
         </div>
       </section>
@@ -348,7 +376,7 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-4 text-xs-center">
-              <img class="white" src="img/logo-white.png">
+              <img class="white" src="img/logo/logo-white.png">
               <h1 class="title-pc">Patrick Chabert</h1>
             </div>
             <div class="col-sm-4 separator-left text-xs-center text-sm-left">
@@ -888,11 +916,11 @@
       </div>
     </div>
 
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
-    <script src="node_modules/tether/dist/js/tether.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="node_modules/hisrc/hisrc.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js" async></script>
+    <script src="node_modules/waypoints/lib/jquery.waypoints.min.js" async></script>
+    <script src="node_modules/tether/dist/js/tether.min.js" async></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" async></script>
+    <script src="node_modules/picturefill/dist/picturefill.min.js" async></script>
+    <script src="js/scripts.js" async></script>
   </body>
 </html>

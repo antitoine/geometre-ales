@@ -48,24 +48,24 @@
 @media all and (min-width: 0) and (max-width: 640px) {
   .bg-separator.ales {
     /*background-image: url('../img/topography-small.jpg');*/
-    background-image: url('../img/ales.jpg');
+    background-image: url('../img/background/ales.jpg');
   }
 }
 @media all and (min-width: 640px) and (max-width: 1280px) {
   .bg-separator.ales {
     /*background-image: url('../img/topography-medium.jpg');*/
-    background-image: url('../img/ales.jpg');
+    background-image: url('../img/background/ales.jpg');
   }
 }
 @media all and (min-width: 1280px) and (max-width: 1920px) {
   .bg-separator.ales {
     /*background-image: url('../img/topography-large.jpg');*/
-    background-image: url('../img/ales.jpg');
+    background-image: url('../img/background/ales.jpg');
   }
 }
 @media all and (min-width: 1920px) {
   .bg-separator.ales {
-    background-image: url('../img/ales.jpg');
+    background-image: url('../img/background/ales.jpg');
   }
 }
 .row.eq-height {
@@ -87,30 +87,30 @@
 .separator-bottom {
   border-bottom: 1px solid rgba(0,0,0,.1);
 }
-@media (max-width: 544px) {
+@media (max-width: 544px) {  /* xs */
   .separator-sm-up, .separator-md-up, .separator-lg-up, .separator-xl-up {
     border: none;
   }
 }
-@media (min-width: 544px) and (max-width: 768px) {
+@media (min-width: 544px) and (max-width: 768px) {  /* sm */
   .separator-xs-down,
   .separator-md-up, .separator-lg-up, .separator-xl-up {
     border: none;
   }
 }
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) {  /* md */
   .separator-xs-down, .separator-sm-down,
   .separator-lg-up, .separator-xl-up {
     border: none;
   }
 }
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1200px) {  /* lg */
   .separator-xs-down, .separator-sm-down, .separator-md-down,
   .separator-xl-up {
     border: none;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1200px) {  /* xl */
   .separator-xs-down, .separator-sm-down, .separator-md-down, .separator-lg-down {
     border: none;
   }
@@ -166,22 +166,22 @@ header .heading {
 }
 @media all and (min-width: 0) and (max-width: 640px) {
   header .heading {
-    background-image: url('../img/topography-small.jpg');
+    background-image: url('../img/background/topography-small.jpg');
   }
 }
 @media all and (min-width: 640px) and (max-width: 1280px) {
   header .heading {
-    background-image: url('../img/topography-medium.jpg');
+    background-image: url('../img/background/topography-medium.jpg');
   }
 }
 @media all and (min-width: 1280px) and (max-width: 1920px) {
   header .heading {
-    background-image: url('../img/topography-large.jpg');
+    background-image: url('../img/background/topography-large.jpg');
   }
 }
 @media all and (min-width: 1920px) {
   header .heading {
-    background-image: url('../img/topography.jpg');
+    background-image: url('../img/background/topography.jpg');
   }
 }
 header .heading .content {

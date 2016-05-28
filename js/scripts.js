@@ -1,15 +1,9 @@
 (function($){
 
-  /****************** HISRC Speed Test ******************/
-  $.hisrc.speedTest();
-
   $(document).ready(function() {
 
     var fixedNavBarOffset = 60;
     var marginNavBar = 20;
-
-    /***************** HISRC Activation ******************/
-    $('img.hisrc').hisrc();
 
     /***************** Header BG Scroll ******************/
 
