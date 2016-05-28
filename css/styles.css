@@ -44,6 +44,8 @@
   border-width: 1px 0;
   height: 200px;
   background: #272727 no-repeat scroll center center / cover;
+  transition: 0.5s linear;
+  transition-property: background-position;
 }
 @media all and (min-width: 0) and (max-width: 640px) {
   .bg-separator.ales {
@@ -160,6 +162,8 @@ header .heading {
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid #E2001A;
+  transition: 0.5s linear;
+  transition-property: background-position;
 }
 @media all and (min-width: 0) and (max-width: 640px) {
   header .heading {
