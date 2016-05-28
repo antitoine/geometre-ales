@@ -190,10 +190,12 @@
               </div>
               <div class="col-sm-5 dynamic-bounce">
                 <picture>
-                  <source srcset="img/activities/boundary.jpg" media="(min-width: 1920px)">
-                  <source srcset="img/activities/boundary-large.jpg" media="(min-width: 1280px)">
-                  <source srcset="img/activities/boundary-medium.jpg" media="(min-width: 640px)">
-                  <img class="img-thumbnail" srcset="img/activities/boundary-small.jpg" alt="Photo représentant un bornage avec en premier plan un appareil de mesure">
+                  <!--[if IE 9]><video style="display: none"><![endif]-->
+                  <source data-srcset="img/activities/boundary.jpg" media="(min-width: 1920px)">
+                  <source data-srcset="img/activities/boundary-large.jpg" media="(min-width: 1280px)">
+                  <source data-srcset="img/activities/boundary-medium.jpg" media="(min-width: 640px)">
+                  <!--[if IE 9]></video><![endif]-->
+                  <img class="img-thumbnail lazyload" data-src="img/activities/boundary-small.jpg" alt="Photo représentant un bornage avec en premier plan un appareil de mesure" />
                 </picture>
               </div>
               <div class="col-sm-12">
@@ -218,9 +220,11 @@
               </div>
               <div class="col-sm-5 dynamic-bounce">
                 <picture>
-                  <source srcset="img/activities/paris.jpg" media="(min-width: 1280px)">
-                  <source srcset="img/activities/paris-medium.jpg" media="(min-width: 640px)">
-                  <img class="img-thumbnail" srcset="img/activities/paris-small.jpg" alt="Photo un bâtiment de la ville de Paris, France">
+                  <!--[if IE 9]><video style="display: none"><![endif]-->
+                  <source data-srcset="img/activities/paris.jpg" media="(min-width: 1280px)">
+                  <source data-srcset="img/activities/paris-medium.jpg" media="(min-width: 640px)">
+                  <!--[if IE 9]></video><![endif]-->
+                  <img class="img-thumbnail lazyload" data-src="img/activities/paris-small.jpg" alt="Photo un bâtiment de la ville de Paris, France">
                 </picture>
               </div>
             </section>
@@ -236,10 +240,12 @@
               </div>
               <div class="col-md-4 dynamic-bounce">
                 <picture>
-                  <source srcset="img/activities/topography-airport.jpg" media="(min-width: 1920px)">
-                  <source srcset="img/activities/topography-airport-large.jpg" media="(min-width: 1280px)">
-                  <source srcset="img/activities/topography-airport-medium.jpg" media="(min-width: 640px)">
-                  <img class="img-thumbnail" srcset="img/activities/topography-airport-small.jpg" alt="Photo d'un appareil de mesure avec un avion en arrière plan">
+                  <!--[if IE 9]><video style="display: none"><![endif]-->
+                  <source data-srcset="img/activities/topography-airport.jpg" media="(min-width: 1920px)">
+                  <source data-srcset="img/activities/topography-airport-large.jpg" media="(min-width: 1280px)">
+                  <source data-srcset="img/activities/topography-airport-medium.jpg" media="(min-width: 640px)">
+                  <!--[if IE 9]></video><![endif]-->
+                  <img class="img-thumbnail lazyload" data-src="img/activities/topography-airport-small.jpg" alt="Photo d'un appareil de mesure avec un avion en arrière plan">
                 </picture>
               </div>
             </section>
@@ -256,10 +262,12 @@
               </div>
               <div class="col-sm-5 dynamic-bounce">
                 <picture>
-                  <source srcset="img/activities/surveyor.jpg" media="(min-width: 1920px)">
-                  <source srcset="img/activities/surveyor-large.jpg" media="(min-width: 1280px)">
-                  <source srcset="img/activities/surveyor-medium.jpg" media="(min-width: 640px)">
-                  <img class="img-thumbnail" srcset="img/activities/surveyor-small.jpg" alt="Photo d'un homme utilisant un appareil de mesure sur un chantier">
+                  <!--[if IE 9]><video style="display: none"><![endif]-->
+                  <source data-srcset="img/activities/surveyor.jpg" media="(min-width: 1920px)">
+                  <source data-srcset="img/activities/surveyor-large.jpg" media="(min-width: 1280px)">
+                  <source data-srcset="img/activities/surveyor-medium.jpg" media="(min-width: 640px)">
+                  <!--[if IE 9]></video><![endif]-->
+                  <img class="img-thumbnail lazyload" data-src="img/activities/surveyor-small.jpg" alt="Photo d'un homme utilisant un appareil de mesure sur un chantier">
                 </picture>
               </div>
             </section>
@@ -280,10 +288,12 @@
               </div>
               <div class="col-sm-5 dynamic-bounce">
                 <picture>
-                  <source srcset="img/activities/supreme-court.jpg" media="(min-width: 1920px)">
-                  <source srcset="img/activities/supreme-court-large.jpg" media="(min-width: 1280px)">
-                  <source srcset="img/activities/supreme-court-medium.jpg" media="(min-width: 640px)">
-                  <img class="img-thumbnail" srcset="img/activities/supreme-court-small.jpg" alt="Photo d'un palais de justice, une cour suprême">
+                  <!--[if IE 9]><video style="display: none"><![endif]-->
+                  <source data-srcset="img/activities/supreme-court.jpg" media="(min-width: 1920px)">
+                  <source data-srcset="img/activities/supreme-court-large.jpg" media="(min-width: 1280px)">
+                  <source data-srcset="img/activities/supreme-court-medium.jpg" media="(min-width: 640px)">
+                  <!--[if IE 9]></video><![endif]-->
+                  <img class="img-thumbnail lazyload" data-src="img/activities/supreme-court-small.jpg" alt="Photo d'un palais de justice, une cour suprême">
                 </picture>
               </div>
             </section>
@@ -920,7 +930,7 @@
     <script src="node_modules/waypoints/lib/jquery.waypoints.min.js" async></script>
     <script src="node_modules/tether/dist/js/tether.min.js" async></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" async></script>
-    <script src="node_modules/picturefill/dist/picturefill.min.js" async></script>
+    <script src="node_modules/lazysizes/lazysizes.min.js" async></script>
     <script src="js/scripts.js" async></script>
   </body>
 </html>
