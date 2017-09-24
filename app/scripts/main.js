@@ -178,14 +178,14 @@
             var that = $(this);
             that.on('click', onMapClickHandler);
             that.off('mouseleave', onMapMouseleaveHandler);
-            that.find('iframe').css("pointer-events", "none");
+            that.find('iframe').css('pointer-events', 'none');
           };
           var onMapClickHandler = function (event) {
             var that = $(this);
             // Disable the click handler until the user leaves the map area
             that.off('click', onMapClickHandler);
             // Enable scrolling zoom
-            that.find('iframe').css("pointer-events", "auto");
+            that.find('iframe').css('pointer-events', 'auto');
             // Handle the mouse leave event
             that.on('mouseleave', onMapMouseleaveHandler);
           };
