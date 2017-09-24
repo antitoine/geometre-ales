@@ -2,11 +2,11 @@
 -------------------------------------------------- */
 @font-face {
   font-family: 'Raleway';
-  src: url('../font/Raleway/raleway_thin-webfont.eot'); /* IE9 Compat Modes */
-  src: url('../font/Raleway/raleway_thin-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('../font/Raleway/raleway_thin-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-  url('../font/Raleway/raleway_thin-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-  url('../font/Raleway/raleway_thin-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+  src: url('../fonts/Raleway/raleway_thin-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Raleway/raleway_thin-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/Raleway/raleway_thin-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+  url('../fonts/Raleway/raleway_thin-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/Raleway/raleway_thin-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 /* General
@@ -47,22 +47,22 @@
 }
 @media all and (min-width: 0) and (max-width: 640px) {
   .bg-separator.ales {
-    background-image: url('../img/background/ales-small.jpg');
+    background-image: url('../images/background/ales-small.jpg');
   }
 }
 @media all and (min-width: 640px) and (max-width: 1280px) {
   .bg-separator.ales {
-    background-image: url('../img/background/ales-medium.jpg');
+    background-image: url('../images/background/ales-medium.jpg');
   }
 }
 @media all and (min-width: 1280px) and (max-width: 1920px) {
   .bg-separator.ales {
-    background-image: url('../img/background/ales-large.jpg');
+    background-image: url('../images/background/ales-large.jpg');
   }
 }
 @media all and (min-width: 1920px) {
   .bg-separator.ales {
-    background-image: url('../img/background/ales.jpg');
+    background-image: url('../images/background/ales.jpg');
   }
 }
 .row.eq-height {
@@ -168,22 +168,22 @@ header .heading {
 }
 @media all and (min-width: 0) and (max-width: 640px) {
   header .heading {
-    background-image: url('../img/background/topography-small.jpg');
+    background-image: url('../images/background/topography-small.jpg');
   }
 }
 @media all and (min-width: 640px) and (max-width: 1280px) {
   header .heading {
-    background-image: url('../img/background/topography-medium.jpg');
+    background-image: url('../images/background/topography-medium.jpg');
   }
 }
 @media all and (min-width: 1280px) and (max-width: 1920px) {
   header .heading {
-    background-image: url('../img/background/topography-large.jpg');
+    background-image: url('../images/background/topography-large.jpg');
   }
 }
 @media all and (min-width: 1920px) {
   header .heading {
-    background-image: url('../img/background/topography.jpg');
+    background-image: url('../images/background/topography.jpg');
   }
 }
 header .heading .content {
