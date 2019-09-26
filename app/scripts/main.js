@@ -228,6 +228,12 @@
       });
     });
 
+    /****************** Cookie Notice ******************/
+
+    $(function () {
+      new cookieNoticeJS({});
+    });
+
   });
 
 })(jQuery);
